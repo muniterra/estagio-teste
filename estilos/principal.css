@@ -1,0 +1,140 @@
+.principal { 
+    margin: 0 auto;
+    max-width: 62.5rem;
+}
+
+.principal__pesquisa { 
+    background-color: #E2E2E2;
+    border-radius: 1.25rem;
+    box-shadow: 0px 0px 20px #00000080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    margin: 1.25rem;
+}
+
+.principal__input { 
+    border: solid black;
+    border-radius: 1.25rem;
+    color: black;
+    font: 500 1rem 'Jost', sans-serif;
+    margin-bottom: 1.25rem;
+    padding: 0.625rem;
+    width: 80%;
+}
+
+.principal__botao {
+    background-color: black;
+    border: none;
+    border-radius: 1.25rem;
+    color: #00d96f;
+    font: 500 1.25rem 'Jost', sans-serif;
+    padding: 0.625rem;
+    width: 90%;
+}
+
+.principal__botao:hover {
+    background-color: #000000e6;
+    cursor: pointer;
+}
+
+.principal__botao:active {
+    font-size: 1rem;
+}
+
+.principal__resultado { 
+    background-color: #E2E2E2;
+    border-radius: 1.25rem;
+    box-shadow: 0px 0px 20px #00000080;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 62vh;
+    overflow-y: scroll;
+    padding: 1.25rem;
+    margin: 1.25rem;
+}
+
+.principal__resultado--invisivel { 
+    display: none;
+}
+
+.principal__filtro {
+    border: solid black;
+    border-radius: 1.25rem;
+    color: black;
+    font: 500 1rem 'Jost', sans-serif;
+    justify-self: center;
+    max-height: 1.25rem;
+    padding: 0.313rem;
+    width: 90%;
+}
+
+.principal__blocoPesquisa {
+    height: 100%;
+    padding-top: 1.25rem;
+    width: 100%;
+}
+
+.principal__nomeRepositorio {
+    font-size: 1.125rem;
+    max-width: 90%;
+}
+
+.principal__link {
+    color: #008b48;
+    text-decoration: none;
+}
+
+.principal__link:hover { 
+    text-decoration: underline;
+}
+
+.principal__descRepositorio { 
+    font-size: 0.625rem;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.principal__descRepositorio--nulo {
+    color: gray;
+}
+
+
+@media screen and (min-width: 31.25rem){ 
+    .principal__pesquisa{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .principal__input {
+        margin-bottom: 0;
+        width: 60%;
+    }
+
+    .principal__botao { 
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 45rem) { 
+    .principal__resultado {
+        column-gap: 1.25rem;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        place-items: end start;
+        row-gap: 1.875rem;
+    }
+
+    .principal__filtro { 
+        grid-column: 1 / -1;
+        place-self: start;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 67.5rem) { 
+    .principal__resultado {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

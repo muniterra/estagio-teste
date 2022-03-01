@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estágio</title>
+    <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/cabecalho.css">
+    <link rel="stylesheet" href="estilos/principal.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a href="#" class="cabecalho__link cabecalho__link--ativo">Home</a></li>
+                <li class="cabecalho__item"><a href="sobre.html" class="cabecalho__link" >Sobre mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="principal__pesquisa">
+            <input type="text" name="input" class="principal__input" placeholder="Digite o nome da organização que deseja buscar">
+            <button class="principal__botao">Pesquisar</button>
+        </section>
+
+        <section class="principal__resultado principal__resultado--invisivel">
+            <input type="text" nme="filtro" class="principal__filtro" placeholder="Deseja filtrar sua busca?">
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+
+</html>

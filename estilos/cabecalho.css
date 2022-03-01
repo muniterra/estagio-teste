@@ -1,0 +1,28 @@
+.cabecalho { 
+    background-color: black;
+    padding: 0.625rem 0;
+}
+
+.cabecalho__lista { 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cabecalho__item { 
+    padding-right:1.25rem;
+}
+
+.cabecalho__link {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.cabecalho__link--ativo { 
+    color: #00d96f;
+}
+
+.cabecalho__link:hover {
+    color: #00d96f;
+    font-size: 1.015rem;
+}
