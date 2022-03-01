@@ -47,8 +47,11 @@ function construirEstrutura(resultados, resultadoBloco){
         if (resultados[i].description == null) {
             novoP.textContent = "Sem descrição";
             novoP.classList.add("principal__descRepositorio--nulo");
-        } else {
+        } else if (resultados[i].description.length <= 88){
             novoP.textContent = resultados[i].description;
+        } else {
+            const substr = resultados[i].description.substring(0, 80);
+            novoP.textContent = `${substr}...`;
         }
 
         novoA.setAttribute("href", resultados[i].html_url)
