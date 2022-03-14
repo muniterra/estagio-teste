@@ -1,7 +1,7 @@
 function buscarResultados() {
 
     const entrada = document.querySelector(".principal__input").value;
-    const url = `https://api.github.com/orgs/${entrada}/repos`;
+    const url = `https://api.github.com/orgs/${entrada}/repos?per_page=50`;
     const options = {
         method: 'GET',
         mode: 'cors',
